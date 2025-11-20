@@ -12,5 +12,67 @@
     <p>
         welcome to home
     </p>
+    <section style="padding:20px 0;">
+        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bXVzaWN8ZW58MHx8MHx8fDA%3D"height="800px" width="800px" alt="Home banner">
+        <h1 style="margin:0 0 8px;">Music Home</h1>
+        <p style="margin:0 0 16px;color:#555;">Discover tracks, playlists and quick previews.</p>
+
+        <!-- Search -->
+        <form style="margin-bottom:18px;">
+            <label for="music-search" style="display:block;margin-bottom:6px;font-weight:600;">Search tracks or artists</label>
+            <input id="music-search" type="search" placeholder="Search..." style="padding:8px;width:320px;max-width:100%;box-sizing:border-box;">
+        </form>
+
+        <!-- Featured tracks -->
+        <h2 style="margin:12px 0;">Featured Tracks</h2>
+        <div style="display:flex;gap:16px:flex-wrap;flex-wrap:wrap;">
+            <article style="width:220px;padding:12px;border:1px solid #eee;border-radius:8px;background:#fafafa;">
+                <div style="width:100%;height:120px;background:#e9e9ef;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:42px;color:#666;">♪</div>
+                <h3 style="margin:10px 0 4px;font-size:16px;">Track One</h3>
+                <p style="margin:0 0 8px;color:#777;font-size:14px;">Artist A • 3:24</p>
+                <audio controls preload="none" style="width:100%;">
+                    <source src="C:\Users\VEERESH AWARALLI\Downloads\Mann Mera - Table No. 21 320 Kbps.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </article>
+
+            <article style="width:220px;padding:12px;border:1px solid #eee;border-radius:8px;background:#fafafa;">
+                <div style="width:100%;height:120px;background:#efe9e9;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:42px;color:#666;">♫</div>
+                <h3 style="margin:10px 0 4px;font-size:16px;">Track Two</h3>
+                <p style="margin:0 0 8px;color:#777;font-size:14px;">Artist B • 4:05</p>
+                <audio controls preload="none" style="width:100%;">
+                    <source src="audio/track2.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </article>
+
+            <article style="width:220px;padding:12px;border:1px solid #eee;border-radius:8px;background:#fafafa;">
+                <div style="width:100%;height:120px;background:#e9efe9;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:42px;color:#666;">♬</div>
+                <h3 style="margin:10px 0 4px;font-size:16px;">Track Three</h3>
+                <p style="margin:0 0 8px;color:#777;font-size:14px;">Artist C • 2:58</p>
+                <audio controls preload="none" style="width:100%;">
+                    <source src="audio/track3.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </article>
+        </div>
+
+        <!-- Playlists -->
+        <h2 style="margin:18px 0 8px;">Playlists</h2>
+        <ul style="padding-left:18px;color:#555;">
+            <li>Morning Vibes — 15 tracks</li>
+            <li>Chill Evening — 12 tracks</li>
+            <li>Workout Mix — 20 tracks</li>
+        </ul>
+
+        <!-- Quick info -->
+        <section style="margin-top:18px;padding:12px;border-top:1px dashed #ddd;color:#666;">
+            <p style="margin:0;font-size:14px;">Tip: place your .mp3 files in an "audio" folder next to this page and update the src attributes to preview tracks.</p>
+        </section>
+
+        <footer style="margin-top:18px;font-size:13px;color:#999;">
+            © Music Home
+        </footer>
+    </section>
 </body>
 </html>

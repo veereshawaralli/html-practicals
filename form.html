@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h1>Student Registration</h1>
+
+    <form method="post" action="#" enctype="multipart/form-data" autocomplete="on">
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            <label for="fname">First name:</label><br>
+            <input id="fname" name="first_name" type="text" placeholder="First name" required><br><br>
+
+            <label for="lname">Last name:</label><br>
+            <input id="lname" name="last_name" type="text" placeholder="Last name" required><br><br>
+
+            <label for="dob">Date of birth:</label><br>
+            <input id="dob" name="dob" type="date" required><br><br>
+
+            <label>Gender:</label><br>
+            <input id="gender_m" name="gender" type="radio" value="male" required>
+            <label for="gender_m">Male</label>
+            <input id="gender_f" name="gender" type="radio" value="female">
+            <label for="gender_f">Female</label>
+            <input id="gender_o" name="gender" type="radio" value="other">
+            <label for="gender_o">Other</label><br><br>
+
+            <label for="photo">Upload photo:</label><br>
+            <input id="photo" name="photo" type="file" accept="image/*"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Academic Details</legend>
+
+            <label for="roll">Roll number:</label><br>
+            <input id="roll" name="roll_number" type="text" placeholder="Roll number" required><br><br>
+
+            <label for="dept">Department:</label><br>
+            <select id="dept" name="department" required>
+                <option value="">-- Select department --</option>
+                <option>Computer Science</option>
+                <option>Electronics</option>
+                <option>Civil Engineering</option>
+                <option>Mechanical</option>
+                <option>Management</option>
+            </select><br><br>
+
+            <label for="sem">Semester:</label><br>
+            <select id="sem" name="semester" required>
+                <option value="">-- Select semester --</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+            </select><br><br>
+
+            <label>Elective subjects (choose any):</label><br>
+            <input id="el1" name="electives" type="checkbox" value="ai">
+            <label for="el1">Artificial Intelligence</label>
+            <input id="el2" name="electives" type="checkbox" value="iot">
+            <label for="el2">IoT</label>
+            <input id="el3" name="electives" type="checkbox" value="dbms">
+            <label for="el3">DBMS</label><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact & Login</legend>
+
+            <label for="email">Email:</label><br>
+            <input id="email" name="email" type="email" placeholder="student@example.edu" required><br><br>
+
+            <label for="phone">Phone:</label><br>
+            <input id="phone" name="phone" type="tel" placeholder="+91xxxxxxxxxx" pattern="[0-9+ -]{7,20}" required><br><br>
+
+            <label for="address">Address:</label><br>
+            <textarea id="address" name="address" rows="3" placeholder="Street, City, State, PIN" required></textarea><br><br>
+
+            <label for="password">Password:</label><br>
+            <input id="password" name="password" type="password" minlength="6" required><br><br>
+
+            <label for="cpassword">Confirm password:</label><br>
+            <input id="cpassword" name="confirm_password" type="password" minlength="6" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Emergency Contact</legend>
+
+            <label for="em_name">Name:</label><br>
+            <input id="em_name" name="emergency_name" type="text" required><br><br>
+
+            <label for="em_phone">Phone:</label><br>
+            <input id="em_phone" name="emergency_phone" type="tel" required><br><br>
+        </fieldset>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
