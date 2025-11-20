@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Shopping Recommendation System</title>
+</head>
+<body>
+  <h1>Shopping Recommendation System</h1>
+
+  <!-- User profile shown above the recommendations table -->
+  <table border="1" cellspacing="0" cellpadding="6">
+    <caption>User profile</caption>
+    <tr>
+      <th>Name</th>
+      <th>Interests</th>
+      <th>Budget</th>
+    </tr>
+    <tr>
+      <td>Student</td>
+      <td>
+        <ul>
+          <li>Electronics</li>
+          <li>Home Appliances</li>
+          <li>Sportswear</li>
+        </ul>
+      </td>
+      <td>Medium</td>
+    </tr>
+  </table>
+
+  <br>
+
+  <!-- Recommendations presented in a table -->
+  <table border="1" cellspacing="0" cellpadding="8">
+    <caption>Top Recommendations</caption>
+    <thead>
+      <tr>
+        <th>S.No</th>
+        <th>Picture</th>
+        <th>Title & Price</th>
+        <th>Rating</th>
+        <th>Description / Why recommended</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td><img src="images/phone.jpg" alt="Smartphone X100" width="100" height="70"></td>
+        <td>Smartphone X100<br>₹15,999</td>
+        <td>★★★★☆ (4.2)</td>
+        <td>
+          <ul>
+            <li>Good performance for price</li>
+            <li>Popular with users who viewed laptops & phones</li>
+          </ul>
+        </td>
+        <td><a href="#" title="View Smartphone">View product</a></td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td><img src="images/headphones.jpg" alt="Headphones" width="100" height="70"></td>
+        <td>Noise-Cancelling Headphones<br>₹3,499</td>
+        <td>★★★★☆ (4.0)</td>
+        <td>
+          <ul>
+            <li>Frequently bought with smartphones</li>
+            <li>Good battery life</li>
+          </ul>
+        </td>
+        <td><a href="#" title="View Headphones">View product</a></td>
+      </tr>
+
+      <tr>
+        <td>3</td>
+        <td><img src="images/shoes.jpg" alt="Running Shoes" width="100" height="70"></td>
+        <td>Running Shoes — Model R7<br>₹2,299</td>
+        <td>★★★★☆ (4.1)</td>
+        <td>
+          <ul>
+            <li>Matches user's sportswear interest</li>
+            <li>Good reviews for comfort</li>
+          </ul>
+        </td>
+        <td><a href="#" title="View Shoes">View product</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br>
+
+  <!-- Recommended by category as a simple table -->
+  <table border="1" cellspacing="0" cellpadding="6">
+    <caption>Recommended by Category</caption>
+    <tr>
+      <th>Category</th>
+      <th>Items</th>
+    </tr>
+    <tr>
+      <td>Electronics</td>
+      <td>
+        <ul>
+          <li>Portable Charger — ₹799</li>
+          <li>Bluetooth Speaker — ₹1,299</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Home Appliances</td>
+      <td>
+        <ul>
+          <li>Air Fryer (2L) — ₹4,999</li>
+          <li>Electric Kettle — ₹999</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+
+  <p>Note: static HTML mockup. Replace image paths (images/*.jpg) with actual images.</p>
+</body>
+</html>
